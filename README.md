@@ -9,11 +9,6 @@ But in the software industry we take developers trained in the theory and throw 
 ## Rules
 
 - No if else trap the test cases
-<<<<<<< HEAD
-- No other dependencies except jest, jest-extent and esm
-
-Fork this project, You would to be the master of JavaScript.
-=======
 - No other dependencies needed except the following
     - @babel/core
     - @babel/preset-env
@@ -23,7 +18,7 @@ Fork this project, You would to be the master of JavaScript.
     - figlet
     - jest
     - jest-extended
-    
+
 Fork this project, You would to be the master of JavaScript.
 
 ## Running on your local machine
@@ -49,17 +44,13 @@ Fork this project, You would to be the master of JavaScript.
 2. `cd` into this project directory
 3. Type `npm install` then It will install all dependencies
 4. Begin the code kata
->>>>>>> upstream/master
 
 ## Note
 
 This code kata creates for Thai developers. Therefore, the content in the test cases prepared in Thai.
-<<<<<<< HEAD
-=======
 
 ## Plan of Future
 
-Code Camp 4's Code Kata will be a web application running on the cloud, and students will write the code challenges from there, but we are researching the possible ways. 
+Code Camp 4's Code Kata will be a web application running on the cloud, and students will write the code challenges from there, but we are researching the possible ways.
 
 So stay tune.
->>>>>>> upstream/master

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function main(str, str2) {
     let isDiff = 0;
     for(let i=0 ; i<str.length ; i++){
@@ -11,8 +10,3 @@ function main(str, str2) {
 }
 
 module.exports = { main };
-=======
-export function main(str, str2) {
-	// Your code begins here;
-}
->>>>>>> upstream/master
