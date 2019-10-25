@@ -3,15 +3,12 @@ function main(str) {
 	let countChar = 0;
 	let textOutput = '';
 	for (let i = 0; i < str.length; i++) {
-		let currentChar = str.charAt(i);
-		let nextChar = str.charAt(i + 1);
+		let currentChar = str[i];
+		let nextChar = str[i+1];
 		countChar++;
 		if (currentChar !== nextChar) {
 			textOutput += `${countChar}${currentChar}`;
 			countChar = 0;
-			if (nextChar === '') {
-				break;
-			}
 		}
 	}
 	return textOutput;
