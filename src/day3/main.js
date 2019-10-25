@@ -13,11 +13,8 @@ function main(str) {
 	}
 	return textOutput;
 }
-<<<<<<< HEAD
-=======
 //input: 'AAAABBBCCDAA'
 //output: '4A3B2C1D2A'
 module.exports = {
 	main
 };
->>>>>>> finish codekata day3

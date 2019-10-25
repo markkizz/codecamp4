@@ -4,11 +4,7 @@
   "description": "Assignments for Thailand Code Camp 4",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "test": "./activate.sh"
-=======
     "test": "babel-node index.js"
->>>>>>> upstream/master
   },
   "repository": {
     "type": "git",
