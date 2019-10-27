@@ -1,30 +1,24 @@
 export function main(arr) {
 	// Your code begins here;
-	let room;
-	//if arr.length === 1
-	if (arr.length === 1) {
-		//  return 1
-		room = 1;
-		return room;
-	} else {
-		room = arr.length===2 ? 1 : 0;
-		for (let i = 0, j = 1; j < arr.length; j++) {
-			//compare
-			room += compares(arr[i], arr[j]);
-		}
-		return room;
+	let arrSorted = [];
+	let objStart = {};
+	let objEnd = {};
+	let room = 0;
+	let sumRoom = [];
+	let maxRoom = 0;
+	//separate arr2d to arr1d
+	let arr1d = [].concat(...arr);
+	for (let i = 0; i < arr.length; i++) {
+		objStart[arr[i][0]] = true;
 	}
-
-	function compares(arr1, arr2) {
-		let count = 0;
-		for (let i = arr1[0], j = arr2[1]; i <= arr1[1] || j >= arr2[0];) { //i30<75,j150>60
-			if (i >= j) {
-				count = 1;
-				break;
-			}
-			i += i <= arr1[1] ? 1 : 0;
-			j -= j >= arr2[0] ? 1 : 0;
-		}
-		return count;
+	//Numeric sort array
+	arrSorted = arr1d.sort((a,b) => a - b);
+	//check start and end time
+	for (let ele of arrSorted) {
+		room = objStart[ele] ? room+1 : room-1;
+		sumRoom.push(room);
 	}
+	//find maximum room
+	maxRoom = Math.max(...sumRoom);
+	return maxRoom;
 }
