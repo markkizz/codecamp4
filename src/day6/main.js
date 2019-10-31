@@ -1,4 +1,4 @@
-function main(arr) {
+function main(root) {
 	// Your code begins here;
 }
 
